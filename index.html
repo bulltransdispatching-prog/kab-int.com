@@ -1,0 +1,1085 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kab International | ISO Certification, Inspection and Training</title>
+<meta name="description" content="Kab International provides ISO management system certification, inspection and training, including lead auditor and internal auditor courses.">
+<meta name="theme-color" content="#0F2733">
+<meta property="og:title" content="Kab International">
+<meta property="og:description" content="ISO certification, inspection and training.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect width='34' height='34' rx='6' fill='%230B7A75'/%3E%3Cpath d='M10 8v18M10 17l9-9M12.5 14.5L21 26' stroke='white' stroke-width='3' fill='none'/%3E%3Ccircle cx='26' cy='23' r='2.6' fill='%23C98A1B'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Kab International","url":"https://kab-int.com","email":"info@kab-int.com","telephone":"+966537368233","description":"Management system certification, inspection and training."}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky header with page nav (Home, Training, Register, Blog); dark hero band with certificate-card visual; banded sections; modal dialogs for enrolment/registration; floating WhatsApp button. */
+:root{
+  --bg:#F4F7F8; --surface:#FFFFFF; --ink:#0F2733; --muted:#4F6672; --line:#D5E0E4;
+  --accent:#0B7A75; --accent-ink:#FFFFFF; --accent-soft:#E2F2F1;
+  --band:#0F2733; --band2:#16384A; --band-ink:#EAF3F4; --band-muted:#9DB5BF; --mark:#C98A1B; --wa:#128C4A;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0A1A22; --surface:#10252F; --ink:#E7F1F3; --muted:#9DB5BF; --line:#21404D;
+  --accent:#3CC2B8; --accent-ink:#06201F; --accent-soft:#12343A;
+  --band:#06131A; --band2:#0E2B38; --band-ink:#E7F1F3; --band-muted:#8AA5B0; --mark:#E0A63A; --wa:#25B866; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0A1A22; --surface:#10252F; --ink:#E7F1F3; --muted:#9DB5BF; --line:#21404D;
+  --accent:#3CC2B8; --accent-ink:#06201F; --accent-soft:#12343A;
+  --band:#06131A; --band2:#0E2B38; --band-ink:#E7F1F3; --band-muted:#8AA5B0; --mark:#E0A63A; --wa:#25B866; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);margin:0}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.1;margin:0;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+button{font:inherit}
+:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.on-dark .eyebrow,.band .eyebrow{color:var(--mark)}
+
+/* header */
+.util{background:var(--band);color:var(--band-muted);font:400 12.5px/1.4 var(--mono)}
+.util .wrap{display:flex;gap:6px 24px;flex-wrap:wrap;justify-content:space-between;padding-block:8px}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;padding-block:12px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 20px/1 var(--display);letter-spacing:-.01em}
+.logo svg{width:36px;height:36px;flex:none}
+.logo small{display:block;font:500 10px/1 var(--mono);letter-spacing:.14em;color:var(--muted);margin-top:4px;text-transform:uppercase}
+nav ul{display:flex;gap:2px 8px;flex-wrap:wrap;list-style:none;margin:0;padding:0;font-weight:500;font-size:15px}
+nav a{text-decoration:none;padding:8px 10px;border-radius:4px;display:block}
+nav a:hover{background:var(--accent-soft)}
+nav a.on{color:var(--accent);box-shadow:inset 0 -2px 0 var(--accent);border-radius:0}
+.hbtns{display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--accent-ink);font:600 15px/1 var(--body);padding:14px 20px;border:1.5px solid var(--accent);border-radius:4px;text-decoration:none;cursor:pointer}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.on-dark .btn.ghost,.band .btn.ghost{color:var(--band-ink);border-color:var(--band-muted)}
+.btn.wa{background:var(--wa);border-color:var(--wa);color:#fff}
+.btn.sm{padding:10px 14px;font-size:14px}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* pages */
+.page{display:none}
+.page.show{display:block}
+
+/* hero */
+.hero{background:var(--band);color:var(--band-ink);position:relative;overflow:hidden;
+  background-image:linear-gradient(var(--band2) 1px,transparent 1px),linear-gradient(90deg,var(--band2) 1px,transparent 1px);background-size:44px 44px;background-position:-1px -1px}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--band) 35%,transparent 100%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:center;padding-block:clamp(44px,7vw,96px)}
+.hero h1{font-size:clamp(2.3rem,5.4vw,4.2rem);margin:16px 0 18px;letter-spacing:-.025em;font-weight:800}
+.hero h1 em{font-style:normal;color:var(--mark)}
+.lede{font-size:1.125rem;color:var(--band-muted);max-width:56ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px;font:500 12px/1 var(--mono);color:var(--band-muted)}
+.chips span{border:1px solid #2B4C5B;padding:7px 10px;border-radius:3px}
+.certcard{background:var(--surface);color:var(--ink);border-radius:8px;padding:clamp(18px,3vw,30px);box-shadow:0 24px 60px rgba(0,0,0,.35);transform:rotate(1.5deg);max-width:470px;margin-left:auto;position:relative;min-width:0}
+.certcard .top{display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:16px}
+.certcard .top b{font:800 15px/1 var(--display)}
+.certcard .top span{font:500 10.5px/1 var(--mono);letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.certcard h3{font-size:1.35rem;margin:6px 0 4px}
+.certcard p.s{font-size:.82rem;color:var(--muted)}
+.certcard dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:16px 0 0;font-size:.85rem}
+.certcard dt{font:500 10.5px/1.9 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.certcard dd{margin:0}
+.seal{position:absolute;right:18px;bottom:-22px;width:84px;height:84px}
+.stamp{display:inline-block;font:500 10px/1 var(--mono);letter-spacing:.12em;border:1.5px solid var(--mark);color:var(--mark);padding:4px 7px;border-radius:3px;transform:rotate(-4deg)}
+
+/* trust strip */
+.trust{border-bottom:1px solid var(--line);background:var(--surface)}
+.trust .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0}
+.trust div{padding:20px 18px;border-right:1px solid var(--line);min-width:0}
+.trust div:last-child{border-right:0}
+.trust b{display:block;font:700 1rem/1.2 var(--display);margin-bottom:4px}
+.trust span{font-size:.88rem;color:var(--muted)}
+
+section{padding-block:clamp(48px,7vw,92px)}
+.head{display:grid;gap:10px;max-width:64ch;margin-bottom:36px}
+.head h2{font-size:clamp(1.8rem,3.8vw,2.8rem);letter-spacing:-.02em}
+.head p{color:var(--muted)}
+.band{background:var(--band);color:var(--band-ink)}
+.band .head p{color:var(--band-muted)}
+.split{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:34px}
+.split .head{margin-bottom:0}
+
+/* standards */
+.std{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--surface)}
+.std article{padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);margin:-1px -1px 0 0;min-width:0;transition:background .15s}
+.std article:hover{background:var(--accent-soft)}
+.std .no{font:500 13px/1 var(--mono);color:var(--accent)}
+.std h3{font-size:1.2rem;margin:10px 0 6px}
+.std p{font-size:.93rem;color:var(--muted)}
+
+/* path */
+.path{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:22px;counter-reset:s;list-style:none;margin:0;padding:0}
+.path li{counter-increment:s;border-top:2px solid var(--mark);padding-top:14px;min-width:0}
+.path li::before{content:"Stage " counter(s);font:500 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mark)}
+.path h3{font-size:1.15rem;margin:10px 0 6px}
+.path p{font-size:.92rem;color:var(--band-muted)}
+
+/* course cards */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.filters button{background:var(--surface);color:var(--ink);border:1px solid var(--line);padding:9px 14px;border-radius:999px;font-size:14px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.courses{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.course{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:22px;display:grid;grid-template-rows:auto auto 1fr auto;gap:10px;min-width:0}
+.course .tag{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.course h3{font-size:1.2rem}
+.course p{font-size:.92rem;color:var(--muted)}
+.course .meta{display:flex;gap:6px;flex-wrap:wrap;font:500 12px/1 var(--mono);color:var(--muted)}
+.course .meta span{background:var(--bg);border:1px solid var(--line);padding:6px 8px;border-radius:3px}
+.course .row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:6px}
+.course .row small{font:500 12px/1.3 var(--mono);color:var(--muted)}
+
+/* register page */
+.reg{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:clamp(18px,3vw,30px)}
+.card h2,.card h3{margin-bottom:6px}
+.steps{display:flex;gap:6px;margin-bottom:22px;list-style:none;padding:0}
+.steps li{flex:1;font:500 11.5px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-top:3px solid var(--line);padding-top:8px}
+.steps li.on{color:var(--accent);border-color:var(--accent)}
+.steps li.done{border-color:var(--accent)}
+form{display:grid;gap:14px}
+.fstep{display:none;gap:14px}
+.fstep.on{display:grid}
+label{display:grid;gap:6px;font:500 12.5px/1.2 var(--mono);letter-spacing:.03em;color:var(--muted)}
+input,select,textarea{font:400 15px/1.4 var(--body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:12px;width:100%;min-width:0}
+input:focus,select:focus,textarea:focus{border-color:var(--accent)}
+textarea{min-height:96px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.checks{display:flex;gap:8px;flex-wrap:wrap}
+.checks label{display:flex;align-items:center;gap:8px;font:400 14px/1.2 var(--body);letter-spacing:0;color:var(--ink);border:1px solid var(--line);padding:9px 12px;border-radius:4px;background:var(--bg);cursor:pointer}
+.checks input{width:auto}
+.actions{display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap;margin-top:4px}
+.note{font-size:.85rem;color:var(--muted)}
+.prep{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:12px}
+.prep li{display:grid;grid-template-columns:22px 1fr;gap:10px;font-size:.93rem}
+.prep svg{width:20px;height:20px;color:var(--accent)}
+.done-panel{display:grid;gap:14px}
+.done-panel pre{margin:0;white-space:pre-wrap;word-break:break-word;font:400 13px/1.55 var(--mono);background:var(--bg);border:1px solid var(--line);padding:14px;border-radius:4px}
+
+/* blog */
+.posts{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:22px}
+.post{background:var(--surface);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:grid;grid-template-rows:auto 1fr;text-decoration:none;min-width:0}
+.post:hover{border-color:var(--accent)}
+.post .art{aspect-ratio:16/8;background:var(--band);display:grid;place-items:center;position:relative;overflow:hidden}
+.post .art svg{width:100%;height:100%;display:block}
+.post .body{padding:20px;display:grid;gap:8px;align-content:start}
+.post .cat{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.post h3{font-size:1.2rem}
+.post p{font-size:.92rem;color:var(--muted)}
+.post .by{font:500 12px/1.3 var(--mono);color:var(--muted);margin-top:4px}
+.article{max-width:760px;margin:0 auto}
+.article h1{font-size:clamp(2rem,4.5vw,3.2rem);letter-spacing:-.02em;margin:14px 0}
+.article .by{font:500 13px/1.4 var(--mono);color:var(--muted);margin-bottom:28px}
+.article p{margin-bottom:18px;font-size:1.06rem;line-height:1.75}
+.article h3{font-size:1.4rem;margin:30px 0 10px}
+.article ul{margin:0 0 18px;padding-left:22px;line-height:1.75}
+.back{display:inline-block;margin-bottom:22px;font:500 13px/1 var(--mono);text-decoration:none;color:var(--accent)}
+.cta-box{margin-top:36px;padding:24px;background:var(--accent-soft);border-radius:8px;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+
+/* verify */
+.verify{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.vrow{display:flex;gap:10px;flex-wrap:wrap;display:flex}
+.vrow label{flex:1 1 220px}
+.result{border:1px solid var(--line);border-radius:6px;background:var(--surface);overflow-x:auto}
+.result dl{display:grid;grid-template-columns:auto 1fr;margin:0;font-size:.93rem}
+.result dt,.result dd{padding:10px 14px;border-bottom:1px solid var(--line);margin:0}
+.result dt{font:500 12px/1.6 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.result .msg{padding:14px;font-size:.93rem}
+
+/* faq + contact */
+.faq{max-width:820px}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font:600 1.08rem/1.4 var(--display);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:500 20px/1 var(--mono);color:var(--accent)}
+details[open] summary::after{content:"–"}
+details p{margin-top:10px;color:var(--muted);max-width:68ch}
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.band .card{color:var(--ink)}
+.cl{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:14px}
+.cl li{display:grid;gap:2px}
+.cl b{font:500 12px/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mark)}
+.cl span{user-select:all}
+footer{background:var(--band);color:var(--band-muted);font-size:.9rem;border-top:1px solid #21404D}
+footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px;padding-block:44px 24px}
+footer h4{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--band-ink);margin-bottom:14px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--band-ink)}
+.copy{grid-column:1/-1;border-top:1px solid #21404D;padding-top:18px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:.82rem}
+
+/* whatsapp */
+.wa-float{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;align-items:center;gap:10px;background:var(--wa);color:#fff;text-decoration:none;font-weight:600;padding:13px 18px 13px 14px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.wa-float svg{width:26px;height:26px}
+.wa-float:hover{filter:brightness(1.08)}
+
+/* modal */
+.ov{position:fixed;inset:0;z-index:50;background:rgba(6,19,26,.66);display:none;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.ov.show{display:flex;animation:fade .18s ease-out}
+.modal{background:var(--surface);color:var(--ink);border-radius:10px;width:100%;max-width:560px;max-height:100%;overflow:auto;padding:clamp(20px,3.5vw,32px);position:relative;box-shadow:0 30px 80px rgba(0,0,0,.45);animation:rise .22s ease-out}
+.modal h2{font-size:1.6rem;margin:8px 40px 6px 0}
+.modal .sub{color:var(--muted);font-size:.95rem;margin-bottom:18px}
+.x{position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer;font:500 20px/1 var(--mono)}
+.promo{text-align:left;display:grid;gap:14px}
+.promo .eyebrow{color:var(--mark)}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes rise{from{transform:translateY(14px);opacity:0}to{transform:none;opacity:1}}
+
+/* scene pictures */
+.pic{aspect-ratio:16/10;border-radius:10px;overflow:hidden;background:#0B1F2A;min-width:0}
+.pic svg,.pic img{width:100%;height:100%;display:block;object-fit:cover}
+.hv{position:relative;margin-bottom:34px;min-width:0}
+.hv .pic{box-shadow:0 24px 60px rgba(0,0,0,.4)}
+.hv .certcard{position:absolute;left:-28px;bottom:-34px;width:min(310px,72%);margin:0;transform:rotate(-2deg);padding:16px 18px;max-width:none}
+.hv .certcard h3{font-size:1.1rem}
+.hv .certcard dl{margin-top:10px;font-size:.8rem}
+.hv .seal{width:64px;height:64px;right:10px;bottom:-16px}
+.tphead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:center;margin-bottom:34px}
+.tphead .head{margin-bottom:0}
+.whywrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.7fr);gap:clamp(20px,4vw,48px);align-items:start}
+.whywrap .why{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.whywrap .pic{aspect-ratio:4/5;position:sticky;top:calc(96px + env(safe-area-inset-top,0px))}
+@media (max-width:860px){
+  .tphead,.whywrap{grid-template-columns:1fr}
+  .whywrap .pic{aspect-ratio:16/10;position:static}
+  .hv .certcard{left:8px;bottom:-28px}
+}
+/* thumbnails */
+.th{display:block;width:100%;height:100%}
+.th .fm{fill:var(--mark)}.th .fa{fill:var(--accent)}.th .fb{fill:var(--band)}.th .f2{fill:var(--band2)}
+.th .sm,.th .sa,.th .sw{fill:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+.th .sm{stroke:var(--mark)}.th .sa{stroke:var(--accent)}.th .sw{stroke:var(--band-ink)}
+.thw{aspect-ratio:2/1;overflow:hidden;border-radius:4px;background:var(--band)}
+.course{grid-template-rows:auto auto auto 1fr auto}
+.course h3 a{text-decoration:none}
+.course h3 a:hover{color:var(--accent)}
+.course .row{justify-content:flex-start;flex-wrap:wrap}
+.sect{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.sect figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.sect figcaption{padding:11px 12px;font-weight:600;font-size:.92rem}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.why article{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:6px;padding:22px;min-width:0}
+.why h3{font-size:1.2rem;margin-bottom:8px}
+.why p{font-size:.93rem;color:var(--muted)}
+/* course detail */
+.chead{background:var(--band);color:var(--band-ink)}
+.chead .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:center;padding-block:clamp(32px,5vw,64px)}
+.chead h1{font-size:clamp(2rem,4.6vw,3.3rem);letter-spacing:-.02em;margin:14px 0}
+.chead .back{color:var(--mark)}
+.chead .meta{display:flex;gap:8px;flex-wrap:wrap;font:500 12px/1 var(--mono);margin-top:18px}
+.chead .meta span{border:1px solid #2B4C5B;padding:7px 10px;border-radius:3px;color:var(--band-muted)}
+.chead .thw{border-radius:8px;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.cd{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.cd h2{font-size:1.6rem;margin:34px 0 12px}
+.cd h2:first-child{margin-top:0}
+.cd p{font-size:1.04rem;line-height:1.75;color:var(--ink)}
+.cd ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.cd li{display:grid;grid-template-columns:22px 1fr;gap:10px;line-height:1.55}
+.cd li svg{width:20px;height:20px;color:var(--accent);margin-top:2px}
+.sticky{position:sticky;top:calc(96px + env(safe-area-inset-top,0px));display:grid;gap:16px}
+.sticky .card h3{font-size:1.25rem;margin-bottom:10px}
+.hl{background:var(--accent-soft);border-radius:8px;padding:18px 20px;margin-top:6px}
+.hl b{font-family:var(--display)}
+@media (max-width:860px){
+  .chead .wrap,.cd{grid-template-columns:1fr}
+  .sticky{position:static}
+}
+@media (max-width:860px){
+  .hero .wrap,.verify,.contact,.reg{grid-template-columns:1fr}
+  .hero::after{background:linear-gradient(180deg,var(--band) 40%,transparent)}
+  .certcard{margin:0 auto;transform:none}
+  footer .wrap{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr}
+}
+@media (max-width:520px){footer .wrap{grid-template-columns:1fr}.wa-float span{display:none}.wa-float{padding:14px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ov.show,.modal{animation:none}}
+</style>
+</head>
+<body>
+<div class="util"><div class="wrap">
+  <span>Management system certification · Inspection · Training</span>
+  <span>info@kab-int.com · <span id="waText">WhatsApp [add number]</span></span>
+</div></div>
+
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#home" aria-label="Kab International home">
+    <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="6" fill="var(--accent)"/><path d="M10 8v18M10 17l9-9M12.5 14.5L21 26" stroke="var(--accent-ink)" stroke-width="3" stroke-linecap="square" fill="none"/><circle cx="26" cy="23" r="2.6" fill="var(--mark)"/></svg>
+    <span>Kab International<small>Certification &amp; Training</small></span>
+  </a>
+  <nav aria-label="Main"><ul>
+    <li><a href="#home" data-nav="home">Home</a></li>
+    <li><a href="#standards">Certification</a></li>
+    <li><a href="#training" data-nav="training">Training</a></li>
+    <li><a href="#register" data-nav="register">Register</a></li>
+    <li><a href="#blog" data-nav="blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul></nav>
+  <div class="hbtns">
+    <a class="btn wa sm" data-wa="Hello Kab International, I would like some information." href="#" target="_blank" rel="noopener">WhatsApp</a>
+    <button class="btn sm" type="button" data-open="choose">Register now</button>
+  </div>
+</div></header>
+
+<main>
+
+<!-- HOME -->
+<div class="page show" id="p-home">
+  <div class="hero on-dark"><div class="wrap">
+    <div>
+      <span class="eyebrow">Independent audits · Verifiable certificates</span>
+      <h1>Certification and training that earn <em>trust</em> before your customers ask.</h1>
+      <p class="lede">Kab International audits management systems against international standards, issues certificates anyone can verify online, and trains the people who run them.</p>
+      <div class="cta">
+        <button class="btn" type="button" data-open="choose">Register now</button>
+        <a class="btn ghost" href="#training">Browse training</a>
+      </div>
+      <div class="chips"><span>ISO 9001</span><span>ISO 14001</span><span>ISO 45001</span><span>ISO/IEC 27001</span><span>ISO 22000</span><span>HACCP</span></div>
+    </div>
+    <div class="hv"><div class="pic" id="heroPic"></div>
+    <div class="certcard" aria-label="Sample certificate preview">
+      <div class="top"><b>Kab International</b><span>Certificate of registration</span></div>
+      <span class="stamp">SAMPLE</span>
+      <h3>Sample Industries (Pvt.) Ltd.</h3>
+      <p class="s">Management system meets the requirements of</p>
+      <dl>
+        <dt>Standard</dt><dd>ISO 9001:2015</dd>
+        <dt>Scope</dt><dd>Design and manufacture of industrial fasteners</dd>
+        <dt>Certificate</dt><dd>KAB-DEMO-0001</dd>
+        <dt>Valid to</dt><dd>2029-02-28</dd>
+      </dl>
+      <svg class="seal" viewBox="0 0 84 84" aria-hidden="true"><circle cx="42" cy="42" r="38" fill="var(--accent)"/><circle cx="42" cy="42" r="31" fill="none" stroke="var(--accent-ink)" stroke-width="1.5" stroke-dasharray="3 3"/><path d="M27 43l10 10 20-22" stroke="var(--accent-ink)" stroke-width="5" fill="none" stroke-linecap="square"/></svg>
+    </div></div>
+  </div></div>
+
+  <div class="trust"><div class="wrap">
+    <div><b>Separate from consultancy</b><span>We audit systems. We never build the ones we certify.</span></div>
+    <div><b>Online verification</b><span>Customers check scope, status and dates in our register.</span></div>
+    <div><b>Clear audit path</b><span>Every stage explained before you sign.</span></div>
+    <div><b>Training in one place</b><span>Lead auditor, awareness and safety courses.</span></div>
+  </div></div>
+
+  <section id="standards"><div class="wrap">
+    <div class="head"><span class="eyebrow">Certification schemes</span><h2>Standards we certify</h2><p>Each certificate states its scope, issue date and expiry date, and stays valid through scheduled surveillance audits.</p></div>
+    <div class="std">
+      <article><span class="no">ISO 9001</span><h3>Quality management</h3><p>Customer requirements, process control, corrective action and continual improvement.</p></article>
+      <article><span class="no">ISO 14001</span><h3>Environmental management</h3><p>Waste, energy, resource use and legal compliance across your sites.</p></article>
+      <article><span class="no">ISO 45001</span><h3>Occupational health &amp; safety</h3><p>Hazard identification, risk controls and worker participation.</p></article>
+      <article><span class="no">ISO/IEC 27001</span><h3>Information security</h3><p>Access control, risk treatment and incident handling for business and customer data.</p></article>
+      <article><span class="no">ISO 22000</span><h3>Food safety</h3><p>Hazard analysis and prerequisite programmes along the food chain.</p></article>
+      <article><span class="no">HACCP / GMP</span><h3>Food &amp; manufacturing practice</h3><p>Critical control points and good manufacturing practice verification.</p></article>
+      <article><span class="no">ISO 22301</span><h3>Business continuity</h3><p>Planning for supplier loss, outages and other interruptions.</p></article>
+      <article><span class="no">ISO 50001</span><h3>Energy management</h3><p>Energy review, baselines and measurable performance improvement.</p></article>
+    </div>
+    <div class="cta"><button class="btn" type="button" data-open="cert">Start certification registration</button></div>
+  </div></section>
+
+  <section id="process" class="band"><div class="wrap">
+    <div class="head"><span class="eyebrow">Audit path</span><h2>From application to certificate</h2><p>Initial certification follows a fixed sequence. Surveillance audits follow during the three-year cycle.</p></div>
+    <ol class="path">
+      <li><h3>Application</h3><p>You send scope, sites, headcount and the standard. We confirm audit time and fees.</p></li>
+      <li><h3>Readiness audit</h3><p>The auditor checks documented information and whether your system is ready.</p></li>
+      <li><h3>Implementation audit</h3><p>The auditor samples records, interviews staff and observes work against the standard.</p></li>
+      <li><h3>Nonconformities</h3><p>Findings are agreed, corrected and verified before the file goes to review.</p></li>
+      <li><h3>Decision</h3><p>An independent reviewer decides. If approved, the certificate is issued and listed in the register.</p></li>
+    </ol>
+  </div></section>
+
+  <section id="why"><div class="wrap">
+    <div class="head"><span class="eyebrow">Why Kab International</span><h2>What you get when you work with us</h2><p>Clear rules, checkable results and people who answer.</p></div>
+    <div class="whywrap"><div class="pic" id="whyPic"></div>
+    <div class="why">
+      <article><h3>Independent audits</h3><p>We audit management systems and do not write them. The team that audits your system never builds it, so findings stay objective.</p></article>
+      <article><h3>Certificates you can verify</h3><p>Every certificate is listed in an online register with scope, status and dates, so your customers can check it in seconds.</p></article>
+      <article><h3>A clear process and a written quote</h3><p>You see every audit stage before you sign, and we quote in writing after reviewing your scope.</p></article>
+      <article><h3>Certification and training, one contact</h3><p>Lead auditor, internal auditor and safety courses sit beside certification, with one team to talk to. Training stays separate from audits to protect impartiality.</p></article>
+      <article><h3>Support on WhatsApp</h3><p>Ask a question, send a document or check a date on WhatsApp, from first enquiry to certificate.</p></article>
+      <article><h3>Flexible delivery</h3><p>Courses run in a classroom, online or on your premises. Audits are planned around your sites and shifts.</p></article>
+    </div></div>
+  </div></section>
+
+  <section class="band" id="industries"><div class="wrap">
+    <div class="head"><span class="eyebrow">Industries</span><h2>Fields we work in</h2><p>Standards apply differently in each sector. We match auditors and courses to your field.</p></div>
+    <div class="sect" id="sectors"></div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="split"><div class="head"><span class="eyebrow">Training</span><h2>Courses for auditors, managers and operators</h2></div><a class="btn ghost" href="#training">All courses</a></div>
+    <div class="courses" id="homeCourses"></div>
+  </div></section>
+
+  <section id="verify" style="padding-top:0"><div class="wrap verify">
+    <div>
+      <div class="head" style="margin-bottom:20px"><span class="eyebrow">Certificate register</span><h2>Verify a certificate</h2><p>Enter a certificate number to see the organisation, standard, scope, status and dates held in our register.</p></div>
+      <form id="vf" class="vrow">
+        <label for="cert">Certificate number<input id="cert" value="KAB-DEMO-0001" autocomplete="off"></label>
+        <button class="btn" type="submit" style="align-self:end">Check</button>
+      </form>
+      <p class="note" style="margin-top:10px">Sample record shown until the live register is connected.</p>
+    </div>
+    <div class="result" id="res" aria-live="polite"></div>
+  </div></section>
+
+  <section class="band"><div class="wrap">
+    <div class="split"><div class="head"><span class="eyebrow">From the blog</span><h2>Guides on training and certification</h2></div><a class="btn ghost" href="#blog">All articles</a></div>
+    <div class="posts" id="homePosts"></div>
+  </div></section>
+
+  <section id="faq"><div class="wrap faq">
+    <div class="head"><span class="eyebrow">Questions</span><h2>Before you apply</h2></div>
+    <details open><summary>What is ISO certification?</summary><p>It confirms that an audit found your management system meets the requirements of a standard. ISO publishes the standards. Certification bodies such as Kab International carry out the audits.</p></details>
+    <details><summary>How long does certification take?</summary><p>It depends on how ready your system is, your size, the number of sites and how quickly findings are closed. We give an audit plan after reviewing your application.</p></details>
+    <details><summary>What does it cost?</summary><p>Fees depend on the standard, employee numbers, sites and scope. We quote after reviewing your registration.</p></details>
+    <details><summary>Do you also write my management system?</summary><p>No. We do not consult on systems we certify. You can use an independent consultant or build the system in-house.</p></details>
+    <details><summary>How do I enrol in a training course?</summary><p>Open the Training page, choose a course and press Enrol. Your details are prepared as a WhatsApp message to our training desk.</p></details>
+  </div></section>
+
+  <section id="contact" class="band"><div class="wrap contact">
+    <div>
+      <div class="head" style="margin-bottom:0"><span class="eyebrow">Contact</span><h2>Talk to the team</h2><p>Send your scope and preferred dates. A team member replies with the next step.</p></div>
+      <ul class="cl">
+        <li><b>Email</b><span>info@kab-int.com</span></li>
+        <li><b>WhatsApp</b><span class="waNum">[add number]</span></li>
+        <li><b>Office</b><span>[Street, city, country]</span></li>
+        <li><b>Hours</b><span>Monday to Saturday, 9:00 to 18:00</span></li>
+      </ul>
+      <div class="cta"><a class="btn wa" data-wa="Hello Kab International, I would like some information." href="#" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+    </div>
+    <div class="card">
+      <h3 style="font-size:1.5rem">Send a message</h3>
+      <form class="plain" id="contactForm" style="margin-top:14px">
+        <label for="c-name">Name<input id="c-name" required autocomplete="name"></label>
+        <label for="c-email">Email<input id="c-email" type="email" required autocomplete="email"></label>
+        <label for="c-msg">Message<textarea id="c-msg" required></textarea></label>
+        <button class="btn" type="submit">Prepare message on WhatsApp</button>
+      </form>
+    </div>
+  </div></section>
+</div>
+
+<!-- TRAINING -->
+<div class="page" id="p-training">
+  <section style="padding-bottom:20px"><div class="wrap">
+    <div class="tphead"><div class="head"><span class="eyebrow">Training</span><h2>Training courses and sign-up</h2><p>Choose a course, press Enrol, and your request is prepared for our training desk. Dates and fees are confirmed on WhatsApp.</p></div><div class="pic" id="trainPic"></div></div>
+    <div class="filters" id="cfilters" role="group" aria-label="Filter courses"></div>
+    <div class="courses" id="allCourses"></div>
+  </div></section>
+  <section class="band"><div class="wrap">
+    <div class="split"><div class="head"><span class="eyebrow">Group training</span><h2>Train your whole team</h2><p>We run courses on your premises or online for groups from one organisation.</p></div><button class="btn" type="button" data-open="group">Request group training</button></div>
+  </div></section>
+</div>
+
+<!-- REGISTER -->
+<div class="page" id="p-register">
+  <section><div class="wrap reg">
+    <div class="card">
+      <span class="eyebrow">Certification registration</span>
+      <h2 style="font-size:2rem;margin-top:10px">Register your organisation</h2>
+      <p class="note" style="margin-bottom:20px">Three short steps. We use your answers to plan audit time and send a quote.</p>
+      <ol class="steps" id="steps"><li>1 Organisation</li><li>2 Scope</li><li>3 Contact</li></ol>
+      <form id="regForm" novalidate>
+        <div class="fstep on" data-step="0">
+          <label for="r-co">Organisation name<input id="r-co" required autocomplete="organization"></label>
+          <div class="two">
+            <label for="r-country">Country<input id="r-country" required autocomplete="country-name"></label>
+            <label for="r-city">City<input id="r-city" required></label>
+          </div>
+          <div class="two">
+            <label for="r-emp">Employees<select id="r-emp"><option>1–10</option><option>11–50</option><option>51–250</option><option>251–1,000</option><option>1,000+</option></select></label>
+            <label for="r-sites">Number of sites<input id="r-sites" type="number" min="1" value="1"></label>
+          </div>
+        </div>
+        <div class="fstep" data-step="1">
+          <fieldset style="border:0;padding:0;margin:0"><legend style="font:500 12.5px/1.2 var(--mono);color:var(--muted);margin-bottom:8px">Standards needed</legend>
+            <div class="checks" id="r-stds"></div></fieldset>
+          <label for="r-type">Request type<select id="r-type"><option>Initial certification</option><option>Transfer from another certification body</option><option>Recertification</option></select></label>
+          <label for="r-scope">Main activities to include in the scope<textarea id="r-scope" placeholder="Example: manufacture and supply of packaged food products"></textarea></label>
+        </div>
+        <div class="fstep" data-step="2">
+          <div class="two">
+            <label for="r-name">Contact person<input id="r-name" required autocomplete="name"></label>
+            <label for="r-role">Job title<input id="r-role" autocomplete="organization-title"></label>
+          </div>
+          <div class="two">
+            <label for="r-email">Work email<input id="r-email" type="email" required autocomplete="email"></label>
+            <label for="r-phone">Phone / WhatsApp<input id="r-phone" type="tel" required autocomplete="tel"></label>
+          </div>
+          <label for="r-when">Preferred audit timing<select id="r-when"><option>As soon as possible</option><option>Within 3 months</option><option>Within 6 months</option><option>Just exploring</option></select></label>
+        </div>
+        <p class="note" id="regErr" role="alert" style="color:#B3261E;display:none"></p>
+        <div class="actions">
+          <button class="btn ghost" type="button" id="prev">Back</button>
+          <button class="btn" type="button" id="next">Continue</button>
+        </div>
+      </form>
+      <div class="done-panel" id="regDone" hidden></div>
+    </div>
+    <aside class="card" style="background:var(--accent-soft)">
+      <div class="pic" id="regPic" style="margin-bottom:18px"></div>
+      <h3 style="font-size:1.35rem;margin-bottom:12px">What to have ready</h3>
+      <ul class="prep">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5 9-10"/></svg><span>Legal name and registered address</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5 9-10"/></svg><span>A short description of products or services</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5 9-10"/></svg><span>Number of employees and locations</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5 9-10"/></svg><span>Any current certificates you hold</span></li>
+      </ul>
+      <p class="note" style="margin-top:18px">Prefer to talk first? Message us on WhatsApp and we will fill this in with you.</p>
+      <div class="cta" style="margin-top:14px"><a class="btn wa" data-wa="Hello Kab International, I need help with certification registration." href="#" target="_blank" rel="noopener">Ask on WhatsApp</a></div>
+    </aside>
+  </div></section>
+</div>
+
+<!-- BLOG -->
+<div class="page" id="p-blog">
+  <section><div class="wrap">
+    <div class="head"><span class="eyebrow">Blog</span><h2>Training and certification guides</h2><p>Practical articles for people preparing for audits, courses and certificates.</p></div>
+    <div class="filters" id="bfilters" role="group" aria-label="Filter articles"></div>
+    <div class="posts" id="allPosts"></div>
+  </div></section>
+</div>
+
+<!-- POST -->
+<div class="page" id="p-post">
+  <section><div class="wrap"><div class="article" id="article"></div></div></section>
+</div>
+
+<!-- COURSE DETAIL -->
+<div class="page" id="p-course"><div id="courseView"></div></div>
+
+</main>
+
+<footer><div class="wrap">
+  <div>
+    <a class="logo" href="#home" style="color:var(--band-ink);margin-bottom:14px"><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="6" fill="var(--accent)"/><path d="M10 8v18M10 17l9-9M12.5 14.5L21 26" stroke="var(--accent-ink)" stroke-width="3" stroke-linecap="square" fill="none"/><circle cx="26" cy="23" r="2.6" fill="var(--mark)"/></svg><span>Kab International</span></a>
+    <p style="max-width:34ch">Independent management system certification, inspection and training.</p>
+  </div>
+  <div><h4>Company</h4><ul><li><a href="#home">Home</a></li><li><a href="#standards">Certification</a></li><li><a href="#blog">Blog</a></li><li><a href="#contact">Contact</a></li></ul></div>
+  <div><h4>Training</h4><ul><li><a href="#training">All courses</a></li><li><a href="#register">Register</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+  <div><h4>Contact</h4><ul><li>info@kab-int.com</li><li class="waNum">[add WhatsApp number]</li><li>[City, country]</li></ul></div>
+  <div class="copy"><span>© 2026 Kab International. All rights reserved.</span><span>Impartiality · Complaints and appeals · Privacy</span></div>
+</div></footer>
+
+<a class="wa-float" data-wa="Hello Kab International, I would like some information." href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.8 2 6.8L3 29l6.6-2c1.9 1 4 1.6 6.4 1.6 7.2 0 13-5.8 13-12.8S23.200 3 16 3zm0 23.300c-2.100 0-4.100-.6-5.800-1.700l-.4-.2-3.900 1.200 1.200-3.800-.3-.4a10.200 10.200 0 0 1-1.600-5.500C5.200 10.200 10 5.600 16 5.600s10.800 4.600 10.800 10.200S22 26.300 16 26.300zm5.900-7.600c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.700 8.700 0 0 1-4.300-3.700c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1.100 1.100-1.100 2.600 1.100 3 1.300 3.200 2.200 3.400 5.400 4.700c2 .8 2.800.9 3.800.7.600-.1 1.900-.8 2.200-1.500s.3-1.400.2-1.500-.3-.2-.6-.4z"/></svg>
+  <span>WhatsApp us</span>
+</a>
+
+<div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="mTitle"><div class="modal" id="modal"></div></div>
+
+<script>
+(function(){
+/* ===== EDIT HERE ===== */
+var WA_NUMBER = "966537368233";   // digits only with country code
+var WA_DISPLAY = "+966 53 736 8233";
+/* Real photos: put an image address (or a file name next to this page) in a slot to replace the drawn picture.
+   Slots: hero, training, site, digital, factory, classroom. Leave "" to keep the illustration. */
+var PHOTOS = {hero:"",training:"",site:"",digital:"",factory:"",classroom:""};
+var COMPANY   = "Kab International";
+
+var COURSES = [
+ {id:"la9001",cat:"Lead Auditor",t:"ISO 9001 Lead Auditor",d:"Plan, lead and report management system audits against ISO 9001.",days:"5 days",mode:"Classroom / Online"},
+ {id:"la14001",cat:"Lead Auditor",t:"ISO 14001 Lead Auditor",d:"Audit environmental management systems and lead an audit team.",days:"5 days",mode:"Classroom / Online"},
+ {id:"la45001",cat:"Lead Auditor",t:"ISO 45001 Lead Auditor",d:"Audit occupational health and safety management systems.",days:"5 days",mode:"Classroom / Online"},
+ {id:"la27001",cat:"Lead Auditor",t:"ISO/IEC 27001 Lead Auditor",d:"Audit information security management systems and controls.",days:"5 days",mode:"Classroom / Online"},
+ {id:"ia9001",cat:"Internal Auditor",t:"ISO 9001 Internal Auditor",d:"Run internal audits, write findings and follow up corrective action.",days:"2 days",mode:"Classroom / Online"},
+ {id:"ia14001",cat:"Internal Auditor",t:"ISO 14001 / 45001 Internal Auditor",d:"Internal audit skills for environmental and safety systems.",days:"2 days",mode:"Classroom / Online"},
+ {id:"aw9001",cat:"Awareness",t:"ISO Standards Awareness",d:"What the main ISO standards require and how to prepare your team.",days:"1 day",mode:"Online / On-site"},
+ {id:"haccp",cat:"Food Safety",t:"HACCP Awareness and Implementation",d:"Hazard analysis, critical control points and record keeping.",days:"2 days",mode:"Classroom / On-site"},
+ {id:"fs22000",cat:"Food Safety",t:"ISO 22000 Food Safety Awareness",d:"Food safety management and prerequisite programmes.",days:"1 day",mode:"Online / On-site"},
+ {id:"heights",cat:"Workplace Safety",t:"Working at Heights",d:"Hazards, equipment checks and safe practice for work at height.",days:"1 day",mode:"On-site"},
+ {id:"fire",cat:"Workplace Safety",t:"Fire Safety and First Aid",d:"Fire prevention, extinguisher use, evacuation and basic first aid.",days:"1 day",mode:"On-site"},
+ {id:"soft",cat:"Professional Skills",t:"Leadership and Communication",d:"Team leadership, reporting and decision making for supervisors.",days:"2 days",mode:"Classroom / Online"}
+];
+
+var RECOGNITION = ""; // optional: e.g. "Registered with [scheme name]". Leave empty to show a neutral line.
+
+/* Detail page content for each course (key = thumbnail picture). */
+var DETAILS = {
+ la9001:{key:"audit",
+  who:["Quality managers and management system owners","Internal auditors ready to lead audit teams","Consultants and supplier-quality staff","People starting a career in auditing"],
+  market:"ISO 9001 is the most widely used management system standard. Buyers in manufacturing, services and construction often ask suppliers for it during tenders and vendor approval, so organisations need people who can audit their own system and their suppliers. Certification work also needs competent audit team leaders. A new edition of ISO 9001 has been published, so auditors who understand the current requirements are useful during transitions.",
+  learn:["Audit principles and the audit process from planning to follow-up","Reading ISO 9001 requirements and finding objective evidence","Leading an audit team and running opening and closing meetings","Writing clear findings and audit reports","Judging nonconformities and verifying corrective action"],
+  prereq:"Basic knowledge of quality management. Workplace experience and some familiarity with ISO 9001 help.",
+  outcome:"A course completion certificate after you pass the assessment. Recognition depends on the scheme the course is registered with, so ask our training desk."},
+ la14001:{key:"env",
+  who:["Environmental and sustainability managers","EHS officers","Internal auditors for environmental systems","Consultants and supplier assessors"],
+  market:"Buyers, lenders and regulators increasingly ask organisations to show how they manage environmental impact. Export customers often include environmental questions in supplier reviews. ISO 14001 gives a recognised way to show control of waste, energy, emissions and legal compliance, and trained auditors are needed to check it.",
+  learn:["Environmental aspects, impacts and legal compliance","Audit planning, sampling and gathering evidence","Auditing operational controls and emergency preparedness","Reporting findings and following up corrective action","Leading an audit team"],
+  prereq:"Basic knowledge of environmental management. Workplace experience helps.",
+  outcome:"A course completion certificate after you pass the assessment."},
+ la45001:{key:"safety",
+  who:["Health and safety managers and officers","Site, plant and operations managers","Internal auditors and EHS consultants","Contractor and supplier assessors"],
+  market:"ISO 45001 is the international standard for occupational health and safety management and replaced OHSAS 18001. Large buyers, main contractors and clients in construction, oil and gas, manufacturing and logistics often ask suppliers to show how they control workplace risk. A lead auditor can check that safety controls work in practice, which helps reduce incidents, downtime and contract risk.",
+  learn:["Hazard identification and risk assessment from an auditor's view","Worker consultation and participation requirements","Auditing operational controls, contractors and emergency response","Reviewing incident investigation and corrective action","Planning, leading and reporting an OH&S audit"],
+  prereq:"Basic knowledge of workplace health and safety. Site or safety experience helps.",
+  outcome:"A course completion certificate after you pass the assessment. Recognition depends on the scheme the course is registered with, so ask our training desk."},
+ la27001:{key:"infosec",
+  who:["IT, security and compliance managers","Risk and data protection officers","Internal auditors in IT services","Consultants and vendor assessors"],
+  market:"Customers who share data with suppliers, especially in IT services, outsourcing, finance and healthcare, often require evidence of information security controls. ISO/IEC 27001 is a common way to provide it, and tenders for software and data services frequently ask for it. Auditors who understand risk treatment and the control set are needed by certified organisations and by their clients.",
+  learn:["The management system clauses and control themes","Auditing risk assessment and the statement of applicability","Checking access, incident and supplier controls","Collecting evidence in technical environments","Reporting and follow-up"],
+  prereq:"Basic knowledge of information security concepts.",
+  outcome:"A course completion certificate after you pass the assessment."},
+ ia9001:{key:"audit",
+  who:["Staff appointed as internal auditors","Quality coordinators","Department heads","New managers preparing for certification"],
+  market:"Every certified organisation must run internal audits, and many struggle at external audits because internal audits were shallow. Trained internal auditors find real gaps early, which saves time and cost before the certification body arrives.",
+  learn:["What ISO 9001 requires and how an audit is planned","Interviewing, sampling and observing work","Writing findings with requirement, evidence and gap","Reporting to management","Checking that corrective action worked"],
+  prereq:"None. Workplace experience helps.",
+  outcome:"A course completion certificate."},
+ ia14001:{key:"safety",
+  who:["Environmental and safety coordinators","Staff appointed as internal auditors","Supervisors and department heads","Teams preparing for certification"],
+  market:"Environmental and safety systems depend on regular internal checks. Trained internal auditors find weak controls before incidents or external audit findings do, and show management where to act.",
+  learn:["Requirements of the environmental and safety standards","Planning and running an internal audit","Auditing legal compliance and operational controls","Writing findings and following up","Reporting to management"],
+  prereq:"None. Workplace experience helps.",
+  outcome:"A course completion certificate."},
+ aw9001:{key:"book",
+  who:["Top management","Team leaders and staff","Organisations starting certification","New employees"],
+  market:"Certification succeeds when people understand why the system exists. Awareness sessions help management and staff know what the standards require, what auditors will ask and how their own work fits in.",
+  learn:["Purpose and structure of the main ISO standards","Roles of management and staff","How certification and audits work","What to prepare before an audit"],
+  prereq:"None.",
+  outcome:"A course attendance certificate."},
+ haccp:{key:"food",
+  who:["Food production and quality staff","Restaurant, catering and packaging teams","Exporters and suppliers to retailers","Food safety team members"],
+  market:"Food buyers, retailers and export markets expect documented control of food safety hazards. HACCP is the base of most food safety schemes, and teams who can run it properly are needed for audits, inspections and customer approvals.",
+  learn:["The HACCP principles and preliminary steps","Hazard analysis and critical control points","Monitoring, corrective action and verification","Prerequisite programmes and records","Preparing for a food safety audit"],
+  prereq:"None. Food industry experience helps.",
+  outcome:"A course completion certificate."},
+ fs22000:{key:"food",
+  who:["Food safety team members","Quality and production managers","Staff of food suppliers and exporters","Management preparing for certification"],
+  market:"Larger food buyers often ask suppliers for a full food safety management system. ISO 22000 builds on HACCP with management responsibility, communication and review. Awareness training helps teams understand what that involves before they start.",
+  learn:["Structure and intent of ISO 22000","Link between HACCP and the management system","Prerequisite programmes and supplier control","Roles, communication and review","Preparing for certification"],
+  prereq:"None.",
+  outcome:"A course attendance certificate."},
+ heights:{key:"heights",
+  who:["Maintenance, construction and facility workers","Supervisors who assign work at height","Contractors and riggers","Safety officers"],
+  market:"Falls from height are a major cause of serious workplace injury. Clients and main contractors often ask for proof of height-safety training before work starts, and auditors and insurers look for it too.",
+  learn:["Assessing hazards before work at height","Selecting and inspecting harnesses and anchor points","Ladders, scaffolds and platforms","Rescue planning and emergency response","Site rules and permits"],
+  prereq:"None. Delivered on site with practical exercises.",
+  outcome:"A course completion certificate."},
+ fire:{key:"fire",
+  who:["Factory, office and warehouse staff","Fire wardens and first aiders","Safety officers","Hotels, schools and clinics"],
+  market:"Employers have a duty of care, and safety audits check that people know how to respond. Trained fire wardens and first aiders reduce harm in the first minutes of an incident.",
+  learn:["Causes of fire and prevention","Choosing and using extinguishers","Evacuation and assembly procedures","Basic first aid for bleeding, burns and CPR awareness","Records and drills"],
+  prereq:"None. Delivered on site with practical exercises.",
+  outcome:"A course completion certificate."},
+ soft:{key:"people",
+  who:["Supervisors and team leads","New managers","Quality and audit staff who report to management","Sales and service teams"],
+  market:"Systems work when people communicate and lead well. Supervisors and auditors who can explain findings, handle disagreement and make decisions get better results from their teams.",
+  learn:["Leading and motivating a team","Clear written and spoken communication","Time management and decision making","Handling conflict and feedback","Reporting to management"],
+  prereq:"None.",
+  outcome:"A course completion certificate."}
+};
+
+var MOTIF = {
+ safety:'<path class="fm" d="M110 98a50 50 0 0 1 100 0z"/><rect class="fm" x="98" y="98" width="124" height="13" rx="5"/><rect class="fa" x="150" y="52" width="20" height="44" rx="4"/>',
+ quality:'<rect class="sm" x="122" y="44" width="76" height="92" rx="8"/><rect class="fm" x="144" y="36" width="32" height="14" rx="4"/><path class="sa" d="M140 92l13 13 27-30"/>',
+ env:'<path class="fa" d="M118 118C112 74 150 46 204 44c4 52-26 82-86 74z"/><path class="sw" d="M122 114L190 62" style="stroke-width:4"/>',
+ infosec:'<path class="fa" d="M160 36l46 16v36c0 30-20 46-46 56-26-10-46-26-46-56V52z"/><rect class="fb" x="147" y="82" width="26" height="22" rx="4"/><path class="sw" d="M152 82v-7a8 8 0 0 1 16 0v7" style="stroke-width:4"/>',
+ food:'<circle class="sm" cx="160" cy="82" r="40"/><circle class="sa" cx="160" cy="82" r="24" style="stroke-width:4"/><path class="sw" d="M102 46v30M94 46v18M110 46v18M102 76v34M224 46c14 12 14 36 0 48M224 46v64" style="stroke-width:4"/>',
+ audit:'<circle class="sm" cx="148" cy="76" r="32"/><path class="sm" d="M172 100l30 30"/><path class="sa" d="M134 76l10 10 18-20" style="stroke-width:5"/>',
+ heights:'<path class="sm" d="M134 40L124 130M186 40l10 90"/><path class="sa" d="M130 58h56M127 76h62M125 94h66M123 112h70" style="stroke-width:5"/>',
+ fire:'<path class="fm" d="M160 34c8 24 36 36 36 64a36 36 0 0 1-72 0c0-16 8-26 16-34 2 12 8 16 14 16-8-20-4-34 6-46z"/><path class="fa" d="M160 90c4 10 16 14 16 28a16 16 0 0 1-32 0c0-8 4-12 8-16 2 6 4 8 8 8-3-8-1-14 0-20z"/>',
+ people:'<circle class="fm" cx="160" cy="62" r="14"/><circle class="fa" cx="118" cy="72" r="11"/><circle class="fa" cx="202" cy="72" r="11"/><path class="fm" d="M132 124a28 28 0 0 1 56 0z"/><path class="fa" d="M96 124a22 22 0 0 1 40-12v12zM224 124a22 22 0 0 0-40-12v12z"/>',
+ book:'<path class="sm" d="M110 54h44v76h-44zM166 54h44v76h-44z"/><path class="sa" d="M120 74h24M120 90h24M176 74h24M176 90h24" style="stroke-width:4"/>',
+ factory:'<path class="fm" d="M100 130V80l30 18V80l30 18V80l30 18V56h30v74z"/><path class="fb" d="M178 112h8v18h-8zM196 112h8v18h-8z"/>',
+ crane:'<path class="sm" d="M130 132V44h70M130 60l70-16M200 44v28"/><path class="sa" d="M200 72v24" style="stroke-width:4"/><rect class="fa" x="188" y="96" width="24" height="16" rx="2"/><path class="sm" d="M104 132h70"/>',
+ health:'<path class="fa" d="M146 40h28v32h32v28h-32v32h-28v-32h-32V72h32z"/>',
+ server:'<rect class="sm" x="116" y="42" width="88" height="26" rx="5"/><rect class="sm" x="116" y="74" width="88" height="26" rx="5"/><rect class="sm" x="116" y="106" width="88" height="26" rx="5"/><circle class="fa" cx="134" cy="55" r="4"/><circle class="fa" cx="134" cy="87" r="4"/><circle class="fa" cx="134" cy="119" r="4"/>',
+ bolt:'<path class="fm" d="M170 36L122 92h34l-8 44 50-58h-34z"/>',
+ cap:'<path class="fm" d="M160 48L90 80l70 32 70-32z"/><path class="sa" d="M122 98v22c20 14 56 14 76 0V98" style="stroke-width:5"/><path class="sw" d="M230 82v32" style="stroke-width:4"/>',
+ truck:'<rect class="sm" x="96" y="60" width="78" height="50" rx="4"/><path class="sm" d="M174 76h30l16 18v16h-46z"/><circle class="fa" cx="124" cy="116" r="12"/><circle class="fa" cx="198" cy="116" r="12"/>'
+};
+function thumb(key){
+  return '<svg class="th" viewBox="0 0 320 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="320" height="160" class="fb"/><path d="M0 40H320M0 80H320M0 120H320M64 0V160M128 0V160M192 0V160M256 0V160" style="stroke:var(--band2);stroke-width:1;fill:none"/><circle cx="160" cy="84" r="62" class="f2"/>'+(MOTIF[key]||MOTIF.audit)+'</svg>';
+}
+/* Illustrated scenes (always on a dark navy ground, so they look the same in both themes) */
+var SC={N0:"#0B1F2A",N1:"#12303F",N2:"#1B4357",N3:"#2A5C73",T:"#19A39A",T2:"#0B7A75",A:"#E0A63A",W:"#EAF3F4",S1:"#E3B48C",S2:"#9B6B4A"};
+function person(x,b,s,body,skin,hat,extra){
+  var hy=b-98*s,o='';
+  o+='<path fill="'+body+'" d="M'+(x-24*s)+' '+b+'L'+(x-19*s)+' '+(b-72*s)+'Q'+x+' '+(b-90*s)+' '+(x+19*s)+' '+(b-72*s)+'L'+(x+24*s)+' '+b+'Z"/>';
+  o+='<rect x="'+(x-5*s)+'" y="'+(b-86*s)+'" width="'+(10*s)+'" height="'+(10*s)+'" fill="'+skin+'"/>';
+  o+='<circle cx="'+x+'" cy="'+hy+'" r="'+(13*s)+'" fill="'+skin+'"/>';
+  if(hat)o+='<path fill="'+hat+'" d="M'+(x-15*s)+' '+(hy-2*s)+'a'+(15*s)+' '+(15*s)+' 0 0 1 '+(30*s)+' 0z"/><rect x="'+(x-19*s)+'" y="'+(hy-3*s)+'" width="'+(38*s)+'" height="'+(4*s)+'" rx="2" fill="'+hat+'"/>';
+  else o+='<path fill="'+(skin===SC.S1?"#3A2A22":"#1A1210")+'" d="M'+(x-13*s)+' '+(hy-2*s)+'a'+(13*s)+' '+(13*s)+' 0 0 1 '+(26*s)+' 0z"/>';
+  return o+(extra||'');
+}
+var scid=0;
+function scene(key){
+  var id="sg"+(++scid),c=SC,o='<svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration"><defs><linearGradient id="'+id+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+c.N2+'"/><stop offset="1" stop-color="'+c.N0+'"/></linearGradient></defs><rect width="800" height="500" fill="url(#'+id+')"/>';
+  if(key==="factory"){
+    o+='<circle cx="620" cy="100" r="44" fill="'+c.N3+'" opacity=".55"/>';
+    o+='<g fill="'+c.N1+'"><rect x="20" y="300" width="60" height="110"/><rect x="90" y="270" width="50" height="140"/><rect x="150" y="320" width="70" height="90"/><rect x="230" y="285" width="46" height="125"/></g>';
+    o+='<rect x="330" y="250" width="440" height="160" fill="'+c.N2+'"/><polygon points="330,250 330,196 405,250 405,196 480,250 480,196 555,250 555,196 630,250 630,196 705,250 705,196 770,250" fill="'+c.N3+'"/>';
+    o+='<rect x="706" y="110" width="32" height="140" fill="'+c.N2+'"/><rect x="706" y="130" width="32" height="12" fill="'+c.A+'"/><circle cx="730" cy="90" r="20" fill="'+c.N3+'" opacity=".5"/><circle cx="750" cy="62" r="26" fill="'+c.N3+'" opacity=".35"/>';
+    for(var i=0;i<6;i++)o+='<rect x="'+(352+i*62)+'" y="290" width="42" height="34" rx="3" fill="'+c.T+'" opacity=".75"/>';
+    o+='<rect x="520" y="350" width="70" height="60" fill="'+c.N0+'"/>';
+    o+='<rect y="410" width="800" height="90" fill="'+c.N0+'"/><rect y="410" width="800" height="5" fill="'+c.N3+'"/>';
+    o+=person(170,470,1.7,c.T,c.S1,null,'<rect x="204" y="352" width="54" height="72" rx="5" fill="'+c.W+'"/><rect x="222" y="346" width="18" height="10" rx="3" fill="'+c.N3+'"/><path d="M216 392l10 10 22-26" stroke="'+c.T2+'" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>');
+    o+=person(300,476,1.7,c.A,c.S2,c.W);
+  }
+  if(key==="classroom"){
+    o+='<rect y="410" width="800" height="90" fill="'+c.N0+'"/>';
+    o+='<rect x="70" y="50" width="450" height="240" rx="10" fill="'+c.W+'"/><rect x="70" y="50" width="450" height="14" rx="7" fill="'+c.N3+'"/>';
+    o+='<g fill="'+c.N3+'"><rect x="100" y="86" width="180" height="10" rx="3"/><rect x="100" y="110" width="130" height="8" rx="3"/><rect x="100" y="130" width="150" height="8" rx="3"/></g>';
+    o+='<rect x="320" y="190" width="30" height="70" fill="'+c.T+'"/><rect x="362" y="160" width="30" height="100" fill="'+c.A+'"/><rect x="404" y="130" width="30" height="130" fill="'+c.T2+'"/><rect x="446" y="110" width="30" height="150" fill="'+c.T+'"/>';
+    o+='<path d="M110 240l18 18 36-40" stroke="'+c.T2+'" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>';
+    o+=person(620,420,1.7,c.T,c.S2,null,'<rect x="560" y="300" width="80" height="6" rx="3" fill="'+c.A+'" transform="rotate(-18 560 300)"/>');
+    var xs=[130,270,410],sk=[c.S1,c.S2,c.S1],bd=[c.A,c.N3,c.T2];
+    for(var j=0;j<3;j++)o+=person(xs[j],440,1.25,bd[j],sk[j],null,'');
+    o+='<g fill="'+c.N2+'"><rect x="70" y="380" width="130" height="14" rx="3"/><rect x="210" y="380" width="130" height="14" rx="3"/><rect x="350" y="380" width="130" height="14" rx="3"/></g>';
+    o+='<g fill="'+c.N0+'"><rect x="88" y="394" width="8" height="56"/><rect x="176" y="394" width="8" height="56"/><rect x="228" y="394" width="8" height="56"/><rect x="316" y="394" width="8" height="56"/><rect x="368" y="394" width="8" height="56"/><rect x="456" y="394" width="8" height="56"/></g>';
+  }
+  if(key==="site"){
+    o+='<circle cx="150" cy="110" r="40" fill="'+c.N3+'" opacity=".5"/>';
+    o+='<rect x="520" y="70" width="16" height="340" fill="'+c.N3+'"/><rect x="360" y="70" width="360" height="12" fill="'+c.A+'"/><rect x="690" y="70" width="40" height="34" fill="'+c.N3+'"/><path d="M400 82v90" stroke="'+c.W+'" stroke-width="3"/><rect x="384" y="172" width="32" height="22" fill="'+c.T+'"/><path d="M520 70l-150 12M520 70l150 12" stroke="'+c.N3+'" stroke-width="3"/>';
+    o+='<g fill="'+c.N2+'"><rect x="400" y="250" width="14" height="160"/><rect x="500" y="250" width="14" height="160"/><rect x="600" y="250" width="14" height="160"/><rect x="380" y="250" width="260" height="14"/><rect x="380" y="320" width="260" height="14"/></g>';
+    o+='<path d="M400 264l100 56M500 264l100 56" stroke="'+c.N3+'" stroke-width="4"/>';
+    o+='<rect y="410" width="800" height="90" fill="'+c.N0+'"/><rect y="410" width="800" height="5" fill="'+c.A+'" opacity=".6"/>';
+    o+=person(190,476,1.75,c.A,c.S2,c.W,'<rect x="140" y="400" width="14" height="76" fill="'+c.N3+'"/>');
+    o+=person(310,470,1.6,c.T,c.S1,c.A);
+  }
+  if(key==="digital"){
+    for(var r=0;r<8;r++)for(var q=0;q<14;q++)o+='<circle cx="'+(30+q*55)+'" cy="'+(30+r*62)+'" r="2" fill="'+c.N3+'" opacity=".6"/>';
+    o+='<rect x="190" y="90" width="420" height="270" rx="14" fill="'+c.N1+'" stroke="'+c.N3+'" stroke-width="5"/>';
+    o+='<rect x="130" y="360" width="540" height="24" rx="10" fill="'+c.N3+'"/>';
+    o+='<path d="M400 130l76 26v60c0 50-34 76-76 92-42-16-76-42-76-92v-60z" fill="'+c.T+'"/>';
+    o+='<rect x="378" y="200" width="44" height="38" rx="6" fill="'+c.N0+'"/><path d="M386 200v-12a14 14 0 0 1 28 0v12" stroke="'+c.N0+'" stroke-width="7" fill="none"/>';
+    o+='<g stroke="'+c.N3+'" stroke-width="3"><rect x="40" y="130" width="110" height="64" rx="8" fill="'+c.N1+'"/><rect x="650" y="200" width="110" height="64" rx="8" fill="'+c.N1+'"/><rect x="60" y="260" width="90" height="56" rx="8" fill="'+c.N1+'"/></g>';
+    o+='<g fill="'+c.A+'"><circle cx="58" cy="150" r="6"/><circle cx="668" cy="220" r="6"/><circle cx="78" cy="278" r="6"/></g><g fill="'+c.N3+'"><rect x="72" y="146" width="62" height="8" rx="3"/><rect x="682" y="216" width="62" height="8" rx="3"/><rect x="92" y="274" width="44" height="8" rx="3"/></g>';
+    o+='<rect y="420" width="800" height="80" fill="'+c.N0+'"/>';
+  }
+  return o+'</svg>';
+}
+function pic(key,alt){
+  var u=PHOTOS[key==="classroom"&&PHOTOS.training?"training":key]||(key==="factory"&&PHOTOS.hero?PHOTOS.hero:"");
+  if(u)return '<img src="'+esc(u)+'" alt="'+esc(alt||"")+'" loading="lazy">';
+  var s=scene(key);return s.replace('aria-label="Illustration"','aria-label="'+esc(alt||"Illustration")+'"');
+}
+var SCENE_FOR={safety:"site",heights:"site",fire:"site",infosec:"digital",food:"factory",env:"factory",audit:"classroom",book:"classroom",people:"classroom"};
+var CATKEY={Training:"audit",Certification:"quality","Food Safety":"food",Compliance:"infosec"};
+var SECTORS=[["factory","Manufacturing"],["crane","Construction"],["food","Food & beverage"],["health","Healthcare"],["server","IT services"],["bolt","Energy & oil and gas"],["cap","Education"],["truck","Logistics"]];
+
+/* Add a blog: copy one object below, change the fields, and put it first in the list.
+   body items: plain text = paragraph, {h:"..."} = subheading, {ul:["..",".."]} = list. */
+var POSTS = [
+ {slug:"lead-auditor-course-guide",cat:"Training",title:"How to choose a lead auditor course",date:"2026-10-12",read:"5 min",
+  sum:"What to check before you book a lead auditor course: content, assessment, trainer experience and recognition.",
+  body:["A lead auditor course teaches you to plan, run and report a management system audit. Choosing the right one saves money and avoids a certificate nobody accepts.",
+   {h:"Check who recognises the certificate"},
+   "Ask which professional body or scheme the course is registered with, and whether employers or certification bodies in your sector accept it. Request this in writing before you pay.",
+   {h:"Look at how you are assessed"},
+   "A serious course includes a written exam and practical audit exercises, such as role-plays and report writing. If there is no assessment, the certificate has little value.",
+   {h:"Ask about the trainer"},
+   "Good trainers have audited in real organisations. Ask how many audits they have led and in which sectors.",
+   {h:"Before you enrol"},
+   {ul:["Confirm the standard and version taught","Ask for the course schedule and daily hours","Find out what pre-reading is required","Check the exam format and the retake policy"]},
+   "Our training desk can answer these questions on WhatsApp before you decide."]},
+ {slug:"prepare-for-stage-1-audit",cat:"Certification",title:"Preparing for your Stage 1 audit",date:"2026-10-08",read:"6 min",
+  sum:"A plain checklist for the readiness audit that opens every initial ISO certification.",
+  body:["The Stage 1 audit checks whether your management system is ready for the main audit. It is a readiness review, and it is the best time to find gaps while there is still room to fix them.",
+   {h:"What the auditor looks at"},
+   {ul:["The scope of your certification and the sites it covers","Your policy and objectives","Documented information required by the standard","Records of internal audit and management review","Your legal and other requirements"]},
+   {h:"Common gaps"},
+   "Many organisations arrive without a completed internal audit or a management review. Others define a scope that does not match what they actually do. Both are easy to fix when found early.",
+   {h:"How to get ready"},
+   "Run an internal audit across every clause, hold a management review, and make sure the people who will be interviewed can explain how their work connects to the system.",
+   "Bring your records in an order the auditor can follow. A clear file shortens the audit and builds confidence."]},
+ {slug:"haccp-vs-iso-22000",cat:"Food Safety",title:"HACCP or ISO 22000: which does your business need?",date:"2026-10-03",read:"5 min",
+  sum:"How the two food safety approaches differ, and how to decide where to start.",
+  body:["HACCP is a method for finding and controlling food safety hazards. ISO 22000 is a full management system standard that includes HACCP principles along with management responsibilities, communication and continual improvement.",
+   {h:"When HACCP alone is enough"},
+   "Smaller producers, or those supplying customers who only ask for HACCP, can start there. It builds the hazard analysis habit and a record system.",
+   {h:"When ISO 22000 fits better"},
+   "If you supply larger buyers, export, or want one system that covers policy, roles, supplier control and review, ISO 22000 gives a fuller structure.",
+   {h:"A practical path"},
+   "Many businesses begin with HACCP, then extend to ISO 22000 when customers ask. Training your team on both early makes the step smaller."]},
+ {slug:"internal-audit-mistakes",cat:"Training",title:"Five internal audit mistakes and how to avoid them",date:"2026-09-27",read:"4 min",
+  sum:"Internal audits fail in predictable ways. Here are the common ones.",
+  body:["An internal audit is useful only when it finds real problems. These are the mistakes we see most.",
+   {ul:["Auditing documents only, and never watching the work","Using the same checklist every year","Auditors checking their own department","Writing findings that are vague or have no evidence","Closing corrective actions without checking they worked"]},
+   {h:"What good looks like"},
+   "Plan audits by risk, use auditors who are independent of the area, and write each finding with the requirement, the evidence and the gap. Verify closure after a reasonable time.",
+   "A short internal auditor course gives your team the skills to do this properly."]},
+ {slug:"verify-a-certificate",cat:"Compliance",title:"How to check that an ISO certificate is genuine",date:"2026-09-20",read:"4 min",
+  sum:"Steps buyers can take to confirm a supplier's certificate before relying on it.",
+  body:["Buyers often ask suppliers for an ISO certificate. A certificate is only useful if it is real, current and covers what you are buying.",
+   {h:"Four checks"},
+   {ul:["Read the scope, and confirm it covers the product or service you buy","Check the expiry date","Look up the certificate number in the issuing body's online register","Ask which accreditation body oversees the issuing organisation"]},
+   {h:"Warning signs"},
+   "Be careful with certificates that have no number, no scope, or no way to verify them online. If the issuer cannot be found in an accreditation body's list, ask for an explanation.",
+   "Kab International publishes certificate details in an online register so customers can check them."]},
+ {slug:"iso-transition-planning",cat:"Certification",title:"Planning for a new edition of an ISO standard",date:"2026-09-14",read:"5 min",
+  sum:"How to approach a standard revision without disrupting your system.",
+  body:["When ISO publishes a new edition of a standard, certified organisations get a transition period. Planning early keeps it routine.",
+   {h:"Start with a gap review"},
+   "Read the new edition against your current system. List what changes, what stays and what needs new evidence.",
+   {h:"Brief the people involved"},
+   "Top management, process owners and internal auditors need to know what changes in their area. A short awareness session does this well.",
+   {h:"Update, then audit"},
+   "Revise documents, run an internal audit against the new requirements and hold a management review before your transition audit.",
+   "Check the transition deadline with your certification body and book the audit early."]}
+];
+/* ===================== */
+
+function $(s,r){return (r||document).querySelector(s)}
+function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function waLink(text){return "https://wa.me/"+(WA_NUMBER||"")+"?text="+encodeURIComponent(text)}
+function setWa(){
+  $$("[data-wa]").forEach(function(a){a.href=waLink(a.getAttribute("data-wa"))});
+  var shown=WA_NUMBER?(WA_DISPLAY||("+"+WA_NUMBER)):"[add number]";
+  $$(".waNum").forEach(function(n){n.textContent=shown});
+  var t=$("#waText"); if(t) t.textContent="WhatsApp "+shown;
+}
+function fmtDate(d){var m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],p=d.split("-");return p[2]*1+" "+m[p[1]-1]+" "+p[0]}
+
+/* art for blog cards */
+var ART={Training:"M20 70h60M20 50h90M20 30h50",Certification:"M60 20l8 16 18 3-13 12 3 18-16-9-16 9 3-18-13-12 18-3z",ISO:"",
+ "Food Safety":"M20 60c10-30 30-30 40 0s30 30 40 0",Compliance:"M25 20h50v60H25zM35 35h30M35 50h30M35 65h18"};
+function art(cat,i){
+  var p=ART[cat]||ART.Training, hue=["var(--band)","var(--band2)"][i%2];
+  return '<svg viewBox="0 0 200 100" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="200" height="100" fill="'+hue+'"/><g transform="translate(70 5) scale(.9)"><path d="'+p+'" fill="none" stroke="var(--mark)" stroke-width="3" stroke-linecap="square" stroke-linejoin="round"/></g><circle cx="170" cy="22" r="26" fill="none" stroke="var(--accent)" stroke-width="2" opacity=".6"/><circle cx="25" cy="85" r="18" fill="var(--accent)" opacity=".25"/></svg>';
+}
+function postCard(p,i){
+  return '<a class="post" href="#post-'+p.slug+'"><div class="art">'+thumb(CATKEY[p.cat]||"audit")+'</div><div class="body"><span class="cat">'+esc(p.cat)+'</span><h3>'+esc(p.title)+'</h3><p>'+esc(p.sum)+'</p><span class="by">'+fmtDate(p.date)+' · '+esc(p.read)+' read</span></div></a>';
+}
+function courseCard(c){
+  var k=(DETAILS[c.id]||{}).key||"audit";
+  return '<article class="course"><div class="thw">'+thumb(k)+'</div><span class="tag">'+esc(c.cat)+'</span><h3><a href="#course-'+c.id+'">'+esc(c.t)+'</a></h3><p>'+esc(c.d)+'</p><div><div class="meta"><span>'+esc(c.days)+'</span><span>'+esc(c.mode)+'</span></div><div class="row"><a class="btn ghost sm" href="#course-'+c.id+'">Details</a><button class="btn sm" type="button" data-enrol="'+c.id+'">Enrol</button></div></div></article>';
+}
+
+/* render lists */
+$("#homeCourses").innerHTML=["la45001","ia9001","haccp"].map(function(i){return COURSES.filter(function(c){return c.id===i})[0]}).map(courseCard).join("");
+$("#homePosts").innerHTML=POSTS.slice(0,3).map(postCard).join("");
+
+var cats=["All"].concat(COURSES.reduce(function(a,c){if(a.indexOf(c.cat)<0)a.push(c.cat);return a},[]));
+var cf="All";
+function drawCourses(){
+  $("#cfilters").innerHTML=cats.map(function(c){return '<button type="button" aria-pressed="'+(c===cf)+'" data-cf="'+esc(c)+'">'+esc(c)+'</button>'}).join("");
+  $("#allCourses").innerHTML=COURSES.filter(function(c){return cf==="All"||c.cat===cf}).map(courseCard).join("");
+}
+var pcats=["All"].concat(POSTS.reduce(function(a,c){if(a.indexOf(c.cat)<0)a.push(c.cat);return a},[]));
+var bf="All";
+function drawPosts(){
+  $("#bfilters").innerHTML=pcats.map(function(c){return '<button type="button" aria-pressed="'+(c===bf)+'" data-bf="'+esc(c)+'">'+esc(c)+'</button>'}).join("");
+  $("#allPosts").innerHTML=POSTS.filter(function(c){return bf==="All"||c.cat===bf}).map(postCard).join("");
+}
+drawCourses();drawPosts();
+$("#sectors").innerHTML=SECTORS.map(function(s){return '<figure><div class="thw" style="border-radius:0">'+thumb(s[0])+'</div><figcaption>'+esc(s[1])+'</figcaption></figure>'}).join("");
+
+$("#heroPic").innerHTML=pic("factory","An auditor and a site manager reviewing a checklist at a factory");
+$("#whyPic").innerHTML=pic("digital","Secure information systems");
+$("#trainPic").innerHTML=pic("classroom","An instructor teaching a training class");
+$("#regPic").innerHTML=pic("site","Workers at a construction site");
+
+/* course detail view */
+var TICK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>';
+function tickList(a){return '<ul>'+a.map(function(i){return '<li>'+TICK+'<span>'+esc(i)+'</span></li>'}).join("")+'</ul>'}
+function showCourse(id){
+  var c=COURSES.filter(function(x){return x.id===id})[0],d=DETAILS[id];
+  if(!c||!d){location.hash="training";return}
+  var rel=COURSES.filter(function(x){return x.id!==id&&x.cat===c.cat}).concat(COURSES.filter(function(x){return x.id!==id&&x.cat!==c.cat})).slice(0,3);
+  var h='<div class="chead on-dark"><div class="wrap"><div><a class="back" href="#training">← All courses</a><br><span class="eyebrow">'+esc(c.cat)+'</span><h1>'+esc(c.t)+'</h1><p class="lede">'+esc(c.d)+'</p><div class="meta"><span>'+esc(c.days)+' (typical)</span><span>'+esc(c.mode)+'</span><span>Dates and fee on request</span></div><div class="cta"><button class="btn" type="button" data-enrol="'+c.id+'">Enrol in this course</button><a class="btn wa" data-wa="Hello Kab International, I have a question about the course: '+esc(c.t)+'" href="#" target="_blank" rel="noopener">Ask on WhatsApp</a></div></div><div class="pic">'+pic(SCENE_FOR[d.key]||"classroom",c.t)+'</div></div></div>'+
+  '<section><div class="wrap cd"><div>'+
+  '<h2>Who needs this course</h2>'+tickList(d.who)+
+  '<h2>Why it matters in today\'s market</h2><p>'+esc(d.market)+'</p>'+
+  '<h2>What you will learn</h2>'+tickList(d.learn)+
+  '<h2>Entry requirements</h2><p>'+esc(d.prereq)+'</p>'+
+  '<h2>What you receive</h2><p>'+esc(d.outcome)+'</p>'+
+  '<div class="hl"><b>Not sure this is the right course?</b><p style="margin-top:6px">Tell us your role and goal on WhatsApp and we will suggest the course that fits.</p></div>'+
+  '</div><aside class="sticky"><div class="card"><h3>Enrol in this course</h3><p class="note" style="margin-bottom:14px">Send your details in two minutes. We confirm the next batch, fee and format on WhatsApp.</p><button class="btn" type="button" data-enrol="'+c.id+'" style="width:100%">Enrol now</button></div>'+
+  '<div class="card" style="background:var(--accent-soft)"><h3>Why train with Kab International</h3>'+tickList(["Practical, exercise-based sessions","Classroom, online or on-site delivery","Support on WhatsApp from enrolment to certificate","Training kept separate from certification audits to protect impartiality"])+'<p class="note" style="margin-top:14px">'+esc(RECOGNITION||"Ask our training desk which scheme registers this course.")+'</p></div></aside></div></section>'+
+  '<section class="band"><div class="wrap"><div class="head"><span class="eyebrow">Related courses</span><h2>You may also need</h2></div><div class="courses">'+rel.map(courseCard).join("")+'</div></div></section>';
+  $("#courseView").innerHTML=h;
+  setWa();
+  document.title=c.t+" | Kab International";
+}
+
+/* post view */
+function showPost(slug){
+  var p=POSTS.filter(function(x){return x.slug===slug})[0];
+  if(!p){location.hash="blog";return}
+  var h='<a class="back" href="#blog">← All articles</a><span class="eyebrow">'+esc(p.cat)+'</span><h1>'+esc(p.title)+'</h1><div class="by">'+fmtDate(p.date)+' · '+esc(p.read)+' read · Kab International</div>';
+  p.body.forEach(function(b){
+    if(typeof b==="string")h+='<p>'+esc(b)+'</p>';
+    else if(b.h)h+='<h3>'+esc(b.h)+'</h3>';
+    else if(b.ul)h+='<ul>'+b.ul.map(function(i){return '<li>'+esc(i)+'</li>'}).join("")+'</ul>';
+  });
+  h+='<div class="cta-box"><div><b style="font-family:var(--display);font-size:1.15rem">Questions about training or certification?</b><p class="note">Message our team and we will help you choose.</p></div><div class="hbtns"><a class="btn wa" data-wa="Hello Kab International, I read your article: '+esc(p.title)+'" href="#" target="_blank" rel="noopener">WhatsApp</a><button class="btn" type="button" data-open="choose">Register</button></div></div>';
+  $("#article").innerHTML=h;
+  setWa();
+  document.title=p.title+" | Kab International";
+}
+
+/* router */
+var PAGES=["home","training","register","blog","post","course"];
+function route(){
+  var h=(location.hash||"#home").slice(1)||"home";
+  var page="home",anchor=null;
+  if(h.indexOf("post-")===0){page="post";showPost(h.slice(5))}
+  else if(h.indexOf("course-")===0){page="course";showCourse(h.slice(7))}
+  else if(PAGES.indexOf(h)>-1&&h!=="post"&&h!=="course")page=h;
+  else anchor=h;
+  PAGES.forEach(function(p){$("#p-"+p).classList.toggle("show",p===page)});
+  $$("[data-nav]").forEach(function(a){var cur=page==="post"?"blog":(page==="course"?"training":page);a.classList.toggle("on",a.getAttribute("data-nav")===cur)});
+  if(page!=="post"&&page!=="course")document.title="Kab International";
+  if(anchor){var el=document.getElementById(anchor);if(el){setTimeout(function(){el.scrollIntoView()},20)}}
+  else window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);
+
+/* modal */
+var ov=$("#ov"),modal=$("#modal"),lastFocus=null;
+function openModal(html){
+  lastFocus=document.activeElement;
+  modal.innerHTML='<button class="x" type="button" data-close aria-label="Close">×</button>'+html;
+  ov.classList.add("show");
+  var f=modal.querySelector("input,select,button.btn");if(f)setTimeout(function(){f.focus()},30);
+  setWa();
+}
+function closeModal(){ov.classList.remove("show");if(lastFocus&&lastFocus.focus)lastFocus.focus()}
+ov.addEventListener("mousedown",function(e){if(e.target===ov)closeModal()});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&ov.classList.contains("show"))closeModal()});
+
+function opts(arr,sel){return arr.map(function(a){return '<option value="'+esc(a.v||a)+'"'+((a.v||a)===sel?' selected':'')+'>'+esc(a.l||a)+'</option>'}).join("")}
+function courseOptions(sel){return COURSES.map(function(c){return {v:c.t,l:c.t}}).map(function(o){return '<option value="'+esc(o.v)+'"'+(o.v===sel?' selected':'')+'>'+esc(o.l)+'</option>'}).join("")}
+
+function enrolModal(id,group){
+  var c=COURSES.filter(function(x){return x.id===id})[0];
+  var sel=c?c.t:"";
+  openModal('<span class="eyebrow">'+(group?'Group training':'Training sign-up')+'</span><h2 id="mTitle">'+(group?'Request group training':'Enrol in a course')+'</h2><p class="sub">'+(group?'Tell us about your team and we will propose dates and a quote.':'Fill in your details. We prepare a message for our training desk on WhatsApp.')+'</p>'+
+   '<form id="enrolForm" data-group="'+(group?1:0)+'">'+
+   '<label for="e-course">Course<select id="e-course">'+courseOptions(sel)+'</select></label>'+
+   '<div class="two"><label for="e-name">Full name<input id="e-name" required autocomplete="name"></label><label for="e-phone">Phone / WhatsApp<input id="e-phone" type="tel" required autocomplete="tel"></label></div>'+
+   '<div class="two"><label for="e-email">Email<input id="e-email" type="email" required autocomplete="email"></label><label for="e-city">City<input id="e-city" required></label></div>'+
+   '<div class="two"><label for="e-mode">Preferred format<select id="e-mode">'+opts(["Classroom","Online","On-site at my company"])+'</select></label>'+
+   (group?'<label for="e-n">Number of participants<input id="e-n" type="number" min="2" value="5"></label>':'<label for="e-co">Company (optional)<input id="e-co" autocomplete="organization"></label>')+'</div>'+
+   '<label for="e-note">Notes (optional)<textarea id="e-note" style="min-height:70px"></textarea></label>'+
+   '<button class="btn" type="submit">Continue</button></form>');
+}
+function certModal(){
+  openModal('<span class="eyebrow">Certification</span><h2 id="mTitle">Quick registration</h2><p class="sub">Share the basics and we will prepare your quote request. The full form is on the Register page.</p>'+
+   '<form id="quickCert">'+
+   '<label for="k-co">Organisation<input id="k-co" required autocomplete="organization"></label>'+
+   '<div class="two"><label for="k-name">Your name<input id="k-name" required autocomplete="name"></label><label for="k-phone">Phone / WhatsApp<input id="k-phone" type="tel" required autocomplete="tel"></label></div>'+
+   '<label for="k-std">Standard<select id="k-std">'+opts(["ISO 9001 Quality","ISO 14001 Environment","ISO 45001 Health & Safety","ISO/IEC 27001 Information Security","ISO 22000 / HACCP Food Safety","More than one"])+'</select></label>'+
+   '<button class="btn" type="submit">Continue</button><a class="note" href="#register" data-close style="text-align:center">Open the full registration form</a></form>');
+}
+function chooseModal(){
+  openModal('<span class="eyebrow">Register</span><h2 id="mTitle">What would you like to register for?</h2><p class="sub">Choose one. It takes about two minutes.</p>'+
+   '<div style="display:grid;gap:12px"><button class="btn" type="button" data-open="cert" style="justify-content:space-between;padding:18px 20px">Certification for my organisation <span aria-hidden="true">→</span></button>'+
+   '<button class="btn ghost" type="button" data-open="enrol" style="justify-content:space-between;padding:18px 20px">Training course sign-up <span aria-hidden="true">→</span></button>'+
+   '<a class="btn wa" data-wa="Hello Kab International, I would like to register. Please guide me." href="#" target="_blank" rel="noopener" style="justify-content:space-between;padding:18px 20px">Ask us on WhatsApp <span aria-hidden="true">→</span></a></div>');
+}
+function promoModal(){
+  openModal('<div class="promo"><span class="eyebrow">Training enrolment open</span><h2 id="mTitle" style="margin:0 40px 0 0">Reserve a seat on a lead auditor or internal auditor course</h2><p class="sub" style="margin:0">Tell us which course you want. We confirm dates, fees and format on WhatsApp.</p><div class="hbtns"><button class="btn" type="button" data-open="enrol">Enrol now</button><button class="btn ghost" type="button" data-close>Not now</button></div></div>');
+}
+function doneModal(title,text,msg,sub){
+  openModal('<span class="eyebrow">Almost done</span><h2 id="mTitle">'+esc(title)+'</h2><p class="sub">'+esc(sub||"Press the button to send this to our team on WhatsApp. Nothing is sent until you do.")+'</p><div class="done-panel"><pre>'+esc(text)+'</pre><a class="btn wa" href="'+waLink(msg||text)+'" target="_blank" rel="noopener">Send on WhatsApp</a>'+(WA_NUMBER?'':'<p class="note">The WhatsApp number has not been set yet, so WhatsApp will ask you to choose a contact.</p>')+'</div>');
+}
+
+/* clicks */
+document.addEventListener("click",function(e){
+  var t=e.target.closest("[data-open],[data-enrol],[data-close],[data-cf],[data-bf]");
+  if(!t)return;
+  if(t.hasAttribute("data-close")){closeModal();return}
+  if(t.hasAttribute("data-cf")){cf=t.getAttribute("data-cf");drawCourses();return}
+  if(t.hasAttribute("data-bf")){bf=t.getAttribute("data-bf");drawPosts();return}
+  if(t.hasAttribute("data-enrol")){enrolModal(t.getAttribute("data-enrol"));return}
+  var o=t.getAttribute("data-open");
+  if(o==="choose")chooseModal();
+  else if(o==="cert")certModal();
+  else if(o==="enrol")enrolModal(null);
+  else if(o==="group")enrolModal(null,true);
+});
+
+/* modal form submits */
+document.addEventListener("submit",function(e){
+  var f=e.target;
+  if(f.id==="enrolForm"){
+    e.preventDefault();
+    var g=f.getAttribute("data-group")==="1";
+    var v=function(i){var el=$("#"+i,f);return el?el.value.trim():""};
+    var lines=[(g?"Group training request":"Training enrolment")+" - "+COMPANY,"Course: "+v("e-course"),"Name: "+v("e-name"),"Phone: "+v("e-phone"),"Email: "+v("e-email"),"City: "+v("e-city"),"Format: "+v("e-mode")];
+    if(g)lines.push("Participants: "+v("e-n")); else if(v("e-co"))lines.push("Company: "+v("e-co"));
+    if(v("e-note"))lines.push("Notes: "+v("e-note"));
+    var text=lines.join("\n");
+    doneModal(g?"Review your request":"Review your enrolment",text,text);
+  }
+  if(f.id==="quickCert"){
+    e.preventDefault();
+    var w=function(i){return $("#"+i,f).value.trim()};
+    var text=["Certification registration - "+COMPANY,"Organisation: "+w("k-co"),"Contact: "+w("k-name"),"Phone: "+w("k-phone"),"Standard: "+w("k-std")].join("\n");
+    doneModal("Review your request",text,text);
+  }
+  if(f.id==="contactForm"){
+    e.preventDefault();
+    var text="Message from website\nName: "+$("#c-name").value.trim()+"\nEmail: "+$("#c-email").value.trim()+"\n"+$("#c-msg").value.trim();
+    doneModal("Review your message",text,text);
+  }
+});
+
+/* registration wizard */
+(function(){
+  var step=0,N=3,F=$("#regForm");
+  var stds=["ISO 9001","ISO 14001","ISO 45001","ISO/IEC 27001","ISO 22000","HACCP","ISO 22301","ISO 50001","Other"];
+  $("#r-stds").innerHTML=stds.map(function(s,i){return '<label for="rs'+i+'"><input type="checkbox" id="rs'+i+'" value="'+esc(s)+'">'+esc(s)+'</label>'}).join("");
+  function draw(){
+    $$(".fstep",F).forEach(function(s,i){s.classList.toggle("on",i===step)});
+    $$("#steps li").forEach(function(li,i){li.className=i===step?"on":(i<step?"done":"")});
+    $("#prev").style.visibility=step===0?"hidden":"visible";
+    $("#next").textContent=step===N-1?"Review and send":"Continue";
+  }
+  function valid(){
+    var err=$("#regErr");err.style.display="none";
+    var bad=$$("[required]",$$(".fstep",F)[step]).filter(function(i){return !i.value.trim()||(i.type==="email"&&!/^\S+@\S+\.\S+$/.test(i.value))})[0];
+    if(step===1&&!$$("#r-stds input:checked").length){err.textContent="Choose at least one standard.";err.style.display="block";return false}
+    if(bad){err.textContent="Please complete the highlighted field"+(bad.type==="email"?" with a valid email":"")+".";err.style.display="block";bad.focus();bad.style.borderColor="#B3261E";return false}
+    return true;
+  }
+  $$("input,select,textarea",F).forEach(function(i){i.addEventListener("input",function(){i.style.borderColor=""})});
+  $("#prev").addEventListener("click",function(){if(step>0){step--;draw()}});
+  $("#next").addEventListener("click",function(){
+    if(!valid())return;
+    if(step<N-1){step++;draw();return}
+    var g=function(i){return $("#"+i).value.trim()};
+    var s=$$("#r-stds input:checked").map(function(i){return i.value}).join(", ");
+    var text=["Certification registration - "+COMPANY,"Organisation: "+g("r-co"),"Location: "+g("r-city")+", "+g("r-country"),"Employees: "+g("r-emp"),"Sites: "+g("r-sites"),"Standards: "+s,"Request: "+g("r-type"),"Scope: "+(g("r-scope")||"-"),"Contact: "+g("r-name")+(g("r-role")?" ("+g("r-role")+")":""),"Email: "+g("r-email"),"Phone: "+g("r-phone"),"Timing: "+g("r-when")].join("\n");
+    F.hidden=true;$("#steps").hidden=true;
+    var d=$("#regDone");d.hidden=false;
+    d.innerHTML='<h3 style="font-size:1.5rem">Review your registration</h3><p class="note">Nothing is sent until you press the button. It opens WhatsApp with this message ready.</p><pre>'+esc(text)+'</pre><div class="hbtns"><a class="btn wa" href="'+waLink(text)+'" target="_blank" rel="noopener">Send on WhatsApp</a><button class="btn ghost" type="button" id="again">Edit details</button></div>'+(WA_NUMBER?'':'<p class="note">The WhatsApp number has not been set yet, so WhatsApp will ask you to choose a contact.</p>');
+    $("#again").addEventListener("click",function(){d.hidden=true;F.hidden=false;$("#steps").hidden=false;step=0;draw()});
+  });
+  draw();
+})();
+
+/* certificate check (sample) */
+var reg={'KAB-DEMO-0001':{org:'Sample Industries (Pvt.) Ltd.',std:'ISO 9001:2015',scope:'Design and manufacture of industrial fasteners',status:'Active',issued:'2026-03-01',expiry:'2029-02-28'}};
+function check(){
+  var k=$("#cert").value.trim().toUpperCase(),r=reg[k],res=$("#res");
+  if(!r){res.innerHTML='<div class="msg">No certificate found for <b>'+esc(k||"that number")+'</b>. Check the number and try again, or contact info@kab-int.com.</div>';return}
+  res.innerHTML='<dl><dt>Organisation</dt><dd>'+r.org+' <span class="stamp">SAMPLE</span></dd><dt>Standard</dt><dd>'+r.std+'</dd><dt>Scope</dt><dd>'+r.scope+'</dd><dt>Status</dt><dd>'+r.status+'</dd><dt>Issued</dt><dd>'+r.issued+'</dd><dt>Expires</dt><dd>'+r.expiry+'</dd></dl>';
+}
+$("#vf").addEventListener("submit",function(e){e.preventDefault();check()});
+check();
+
+setWa();route();
+
+/* one promo popup per session, after 14 seconds, only on the home or training page */
+setTimeout(function(){
+  try{if(sessionStorage.getItem("kabPromo"))return}catch(x){}
+  if(ov.classList.contains("show"))return;
+  var h=(location.hash||"#home");if(h!=="#home"&&h!=="#training")return;
+  promoModal();
+  try{sessionStorage.setItem("kabPromo","1")}catch(x){}
+},14000);
+})();
+</script>
+</body>
+</html>
